@@ -1,156 +1,136 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Loja Profissional</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
+    <meta charset="UTF-8">
+    <title>Meu Site</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f2f2f2;
+        }
+        header {
+            background-color: orange;
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .container {
+            display: flex;
+            margin: 20px;
+        }
+        .sidebar {
+            width: 20%;
+            padding: 15px;
+            background-color: #e0e0e0;
+        }
+        .content {
+            width: 80%;
+            padding: 15px;
+        }
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        .card img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        .sidebar .imagem {
+            background-color: #ccc;
+            height: 100px;
+            margin-bottom: 10px;
+            text-align: center;
+            line-height: 100px;
+        
+        }
 
-    body {
-      background-color: #f5f5f5;
-      color: #333;
-    }
+        
+        #imagem_1 {
+        background-image: url('https://www.petz.com.br/blog/wp-content/uploads/2022/04/cachorro-e-vertebrado-ou-invertebrado2.jpg');
+        background-size: contain;       /* <-- Aqui está o segredo */
+        background-position: center;
+        background-repeat: no-repeat;
+        color: transparent;
+}
+        #imagem_2 {
+        background-image: url(' https://s25.q4cdn.com/103200307/files/doc_multimedia/2024/7/1008624162/EA_SPORTS_FC_25_-_Cover.jpg');
+        background-size: contain;       /* <-- Aqui está o segredo */
+        background-position: center;
+        background-repeat: no-repeat;
+        color: transparent;
+        }
 
-    header {
-      background-color: #1e1e1e;
-      padding: 20px 40px;
-      color: white;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+        #imagem_3 {
+        background-image: url(freefire.jpg);
+        background-size: contain;       /* <-- Aqui está o segredo */
+        background-position: center;
+        background-repeat: no-repeat;
+        color: transparent;
+        }
 
-    header h1 {
-      font-size: 24px;
-    }
-
-    nav a {
-      color: white;
-      margin-left: 20px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .banner {
-      background-image: url('https://via.placeholder.com/1200x300');
-      background-size: cover;
-      background-position: center;
-      height: 300px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
-      font-size: 36px;
-    }
-
-    .produtos {
-      padding: 40px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-    }
-
-    .produto {
-      background-color: white;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      text-align: center;
-      transition: transform 0.2s;
-    }
-
-    .produto:hover {
-      transform: scale(1.03);
-    }
-
-    .produto img {
-      max-width: 100%;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 6px;
-    }
-
-    .produto h2 {
-      margin: 15px 0 10px;
-      font-size: 18px;
-    }
-
-    .produto p {
-      color: #555;
-      margin-bottom: 15px;
-    }
-
-    .botao-comprar {
-      background-color: #007bff;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 4px;
-      text-decoration: none;
-      font-weight: bold;
-      cursor: pointer;
-    }
-
-    .botao-comprar:hover {
-      background-color: #0056b3;
-    }
-
-    footer {
-      background-color: #1e1e1e;
-      color: white;
-      padding: 20px;
-      text-align: center;
-      margin-top: 40px;
-    }
-  </style>
+        #imagem_4 {
+        background-image: url(https://gmedia.playstation.com/is/image/SIEPDC/spider-man-2-keyart-01-en-7june24?$facebook$);
+        background-size: contain;       /* <-- Aqui está o segredo */
+        background-position: center;
+        background-repeat: no-repeat;
+        color: transparent;
+        }
+    </style>
 </head>
 <body>
 
-  <header>
-    <h1>Minha Loja</h1>
-    <nav>
-      <a href="#">Início</a>
-      <a href="#">Produtos</a>
-      <a href="#">Contato</a>
-    </nav>
-  </header>
+<header>
+    <h1>Meu Site</h1>
+    <p>Meu site muito top!</p>
+</header>
 
-  <div class="banner">
-    Bem-vindo à melhor loja online!
-  </div>
+<nav>
+    <a href="#">Inicio</a>
+    <a href="#">Pagina 2</a>
+    <a href="#">Pagina 3</a>
+    <a href="#">Pagina 4</a>
+</nav>
 
-  <section class="produtos">
-    <div class="produto">
-      <img src="https://via.placeholder.com/250x180" alt="Produto 1">
-      <h2>Produto 1</h2>
-      <p>Descrição breve do produto.</p>
-      <a href="#" class="botao-comprar">Comprar</a>
-    </div>
-    <div class="produto">
-      <img src="https://via.placeholder.com/250x180" alt="Produto 2">
-      <h2>Produto 2</h2>
-      <p>Descrição breve do produto.</p>
-      <a href="#" class="botao-comprar">Comprar</a>
-    </div>
-    <div class="produto">
-      <img src="https://via.placeholder.com/250x180" alt="Produto 3">
-      <h2>Produto 3</h2>
-      <p>Descrição breve do produto.</p>
-      <a href="#" class="botao-comprar">Comprar</a>
-    </div>
-    <!-- Adicione mais produtos aqui -->
-  </section>
+<div class="container">
+    <div class="sidebar">
+        <h3>Sobre Mim</h3>
+        <p>Cachorro ou Gato?</p>
+        <div class="imagem" id="imagem_1">Imagem</div>
 
-  <footer>
-    © 2025 Minha Loja. Todos os direitos reservados.
-  </footer>
+        <p>Minha Bio</p>
+        <h3>Meus jogos favoritos</h3>
+        <div class="imagem" id="imagem_2">Imagem</div>
+        <div class="imagem" id="imagem_3">Imagem</div>
+        <div class="imagem" id="imagem_4">Imagem</div>
+    </div>
+
+    <div class="content">
+        <div class="card">
+            <h2>MINHA BIOGRAFIA</h2>
+            <p>José Ricardo, 30 Fev, 2024</p>
+            <img src="https://images.ctfassets.net/uzue8dgm4ubt/3emHxfHQAWY0VM4KPh3sT1/05b0455ab7f97cd4f4862b0b5b00e52f/SP.jpg?fm=jpg&w=1080&fit=scale" alt="Imagem da biografia">
+            <p>ola meu nome e jose ricardo tenho 15 tenho duas irmas meu sonho e ir para sao paulo.</p>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>
